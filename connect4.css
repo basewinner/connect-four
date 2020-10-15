@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* game board table */
+
+body {
+  margin: 80px;
+  background-color: #c8d4d6;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: #603F83
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.piece.p1 {
+  background-color:#00203F;
+}
+
+.piece.p2 {
+  background-color: #bf170b;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 2px #603F83;
+}
+
+#column-top td:hover {
+  background-color: #ADEFD1;
+}
+
+
+
+button {
+    cursor: pointer;
+    position: relative;
+    background-color: #483d8b;
+    border: 2px solid #483d8b;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px;
+    
+    width: 25%;
+    
+  } 
